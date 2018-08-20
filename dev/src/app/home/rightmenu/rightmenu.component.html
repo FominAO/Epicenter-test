@@ -1,0 +1,7 @@
+
+    <div class="right-menu__header">
+      <div *ngFor="let tab of tabs" [style.border-bottom]="(selected==tab.index)?'none':'1px solid #a7a7a775'" class="right-menu__tab  clickable" (click)=selectTab(tab.index)>{{tab.label}}</div> 
+      <div class="right-menu__header-icon">
+            <span class="logo logo_menu clickable"  (click)="moveMenuCall()"></span>
+          </div>
+    </div>  

@@ -1,0 +1,83 @@
+.main-container {
+    background-image: url("newyork.jpeg");
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.login-container {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    max-width: 360px;
+    width: 75%;
+    min-height: 300px;
+    margin: auto;
+    padding: 25px;
+    display: block;
+}
+
+.login-label {
+    font-size: 22pt;
+    margin-bottom: 2em;
+    width: 100%;
+}
+.login-label label {
+    float: right;
+}
+.input-email-field, .input-pass-field {
+    padding: 11px 0;
+    width: 100%;
+    margin-bottom: 2em;
+    border: 1px solid rgba(202, 202, 202, 0.548);
+    border-radius: 5px;
+
+}
+.input-email-field:hover, .input-pass-field:hover {
+    border: 1px solid #85c0ff;
+}
+.input-email-field:active, .input-pass-field:active {
+    border: 1px solid #007bff;
+}
+.form-container {
+    margin-top: 4em;
+}
+.rem-check {
+    margin-right: 10px;
+}
+.login-button {
+    float: right;
+    margin-top: 2em;
+    width: 80px;
+    height: 35px;
+    border: none;
+    box-shadow: 0 0 3px rgb(61, 61, 61);
+    background-color: #007bff;
+    border-radius: 12px;
+}
+.login-button:hover {
+    background-color: #3a99ff;
+}
+.login-button:active {
+    background-color: #3a99ff;
+    box-shadow: none;
+}
+.forgot-password {
+    float: right;
+    color: #007bff;
+}
+.login-options {
+    margin-top: 1em;
+}
+@media (max-width: 365px) {
+    .login-options a{
+        float: left;
+        margin-top: 0.5em;
+    }
+    .login-button {
+        float: left;
+    }
+   }

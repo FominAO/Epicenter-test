@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="driver-col">
+    <div class="driver-col__logo">
+      <span class="logo50 logo_main clickable"></span>
+    </div>
+    <div class="driver-col__control-panel">
+      <div class="driver-col__control-panel_logo" [ngClass]="{'driver-col__control-panel_logo-active': (selectedTab == 1)}" (click)="selectTab(1)"><span class="logo logo1 clickable"></span></div>
+      <div class="driver-col__control-panel_logo" [ngClass]="{'driver-col__control-panel_logo-active': (selectedTab == 2)}" (click)="selectTab(2)"><span class="logo logo2 clickable"></span></div>
+      <div class="driver-col__control-panel_logo" [ngClass]="{'driver-col__control-panel_logo-active': (selectedTab == 3)}" (click)="selectTab(3)"><span class="logo logo3 clickable"></span></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="home-header">
+      <div class="home-header__icon">
+        <span class="logo logo_header-right clickable"></span>
+      </div>
+      <div class="home-header__icon">
+      <span class="logo logo_menu clickable"  (click)="moveMenu()"></span>
+    </div>
+    </div>
+    <div class="main-content">
+
+      <div [ngSwitch]="selectedTab">
+        <div *ngSwitchCase="1">
+          <h1>Home Tab</h1>
+        </div>
+        <div *ngSwitchCase="2">
+          <h1>Message Tab</h1>
+        </div>
+        <div *ngSwitchCase="3">
+          <h1>Graph Tab</h1>
+        </div>
+        <ng-template ngSwitchDefault>
+          <h1>Home Tab 1</h1>
+        </ng-template>
+      </div>
+
+    </div>
+    <div class="footer-container">
+      <div class="home-footer">
+        <hr class="footer-hr">
+        <div class="footer-info">
+          <span class="copyright">Copyright @ 2017.</span>
+          <span class="links">
+            <span class="link">Link1</span>
+            <span class="link">Link2</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-rightmenu [class.right-menu_opened]="opened" class="right-menu_closed"></app-rightmenu>
+</div>

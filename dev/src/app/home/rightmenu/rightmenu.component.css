@@ -1,0 +1,48 @@
+
+.right-menu__header {
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    
+    display: flex;
+    transition: 0.5s
+}
+.right-menu__header-icon {
+    float: right;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #a7a7a775;
+    border-bottom: 1px solid #a7a7a775;
+    transition: 0.5s;
+}
+.right-menu__tab {
+    height: 100px;
+    flex-grow: 1;
+    text-align: center;
+    border-left: 1px solid #a7a7a775;
+    border-bottom: 1px solid #a7a7a775;
+    color: #7e7e7e;
+    line-height: 100px;
+    font-weight: bold;
+}
+.right-menu__tab:active {
+    border-bottom: none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+.clickable:hover {
+    opacity: 0.8;
+}
+.logo {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+.logo_menu {
+    background-image: url("../../iconmenu.png");
+}

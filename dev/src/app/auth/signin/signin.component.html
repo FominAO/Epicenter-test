@@ -1,0 +1,20 @@
+<div class="main-container">
+<div class="login-container">  
+    <div class="login-label">
+      <label>Login</label>
+    </div>
+    <form (ngSubmit)="onSignin(f)" class="form-container" #f="ngForm">
+    <!-- <label class="input-email-label">E-mail</label> -->
+    <input class="input-email-field" type="email" id="email" name="email" ngModel placeholder=" Username" ng-model="email">
+    <!-- <label class="input-pass-label">Password</label> -->
+    <input class="input-pass-field" type="password" id="password" name="password" ngModel placeholder=" Password" [value]="password">
+    <div class="login-options">
+        <input class="rem-check" type="checkbox" id="remember" name="remember" ngModel>
+        <label for="remember">Remember me</label>
+        <a href="#" class="forgot-password">Forgot the password?</a>
+    </div>
+    
+    <button class="login-button" type="submit">Signin</button>
+  </form>
+</div>
+</div>
